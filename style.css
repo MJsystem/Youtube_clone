@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  font-family: "Gothic A1", sans-serif;
+  background-color: #fdfefe;
 }
 
 a {
@@ -7,6 +9,7 @@ a {
   color: #fbfcfc;
 }
 
+/* Header */
 .navbar {
   display: flex;
   background-color: #17202a;
@@ -18,4 +21,100 @@ a {
 
 .navbar__logo i {
   color: #e74c3c;
+}
+
+/* Video Description */
+main {
+  overflow-y: auto;
+}
+
+.main__tags {
+  padding: 8px 12px;
+}
+
+.main__tags a {
+  color: #3498db;
+  font-weight: bold;
+}
+
+.main__title {
+  padding: 8px 12px;
+}
+
+.main__title p {
+  margin: 0;
+}
+
+.main__date {
+  padding: 8px 12px;
+}
+
+.main__date p {
+  margin: 0;
+  font-size: 12px;
+  color: #aab7b8;
+}
+
+.main__btns {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding-left: 0;
+}
+
+.main__btns a {
+  color: #aab7b8;
+  display: block;
+}
+
+.main__btns li {
+  text-align: center;
+}
+
+.main__btns li span {
+  font-size: 12px;
+}
+
+.main__uploader-info {
+  display: flex;
+  padding: 8px 12px;
+  margin: 4px 12px;
+  align-items: center;
+  border-top: 1px solid #aab7b8;
+  border-bottom: 1px solid #aab7b8;
+}
+
+.main__uploader-info img {
+  border-radius: 25px;
+}
+
+.main__uploder-info__channel {
+  padding: 8px;
+}
+
+.main__uploader-info h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+.main__uploader-info p {
+  margin: 0;
+  padding: 0;
+  color: #aab7b8;
+  font-size: 12px;
+}
+
+.main__uploader-info a {
+  color: #17202a;
+  display: block;
+  text-align: right;
+  width: 81%;
+  font-size: 15px;
+}
+
+.main__upNext {
+  padding: 8px 12px;
+  color: #aab7b8;
+  font-size: 13px;
 }
