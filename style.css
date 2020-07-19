@@ -39,10 +39,18 @@ main {
 
 .main__title {
   padding: 8px 12px;
+  display: flex;
 }
 
 .main__title p {
   margin: 0;
+  height: 40px;
+  overflow: hidden;
+}
+
+.main__title i {
+  color: #aab7b8;
+  margin-left: 16px;
 }
 
 .main__date {
