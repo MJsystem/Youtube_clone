@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fbfcfc;
+}
+
+.navbar {
+  display: flex;
+  background-color: #17202a;
+  padding: 16px 20px;
+  justify-content: space-between;
+  align-items: center;
+  color: #fbfcfc;
+}
+
+.navbar__logo i {
+  color: #e74c3c;
+}
