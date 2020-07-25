@@ -3,9 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
     <script
@@ -15,88 +20,121 @@
     <script src="main.js" defer></script>
     <title>Youtube</title>
   </head>
-
   <body>
     <!-- Header -->
-    <nav class="navbar">
-      <div class="navbar__logo">
+    <header>
+      <div class="header__logo">
         <i class="fab fa-youtube"></i>
-        <a href="#">Youtube</a>
+        <span>Youtube</span>
       </div>
-      <div class="navbar__icons">
-        <a href="#"><i class="fas fa-search"></i></a>
-        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+
+      <div class="header__icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-ellipsis-v"></i>
       </div>
-    </nav>
+    </header>
 
     <!-- Video Player -->
-    <video width="100%" height="400vh" preload="auto" controls>
-      <source
+    <section class="player">
+      <video
         src="https://file-examples-com.github.io/uploads/2020/03/file_example_WEBM_640_1_4MB.webm"
-      />
+        controls
+      ></video>
+    </section>
 
-      Sorry, your browser doesn't support embedded videos.
-    </video>
+    <!-- Info -->
+    <div class="forScreenAdjust">
+      <section class="info">
+        <div class="metadata">
+          <ul class="hashtags">
+            <li>#Life</li>
+            <li>#is</li>
+            <li>#fucking</li>
+            <li>#hard</li>
+          </ul>
+          <div class="titleBtns">
+            <p class="titleParagraph active">
+              악마되는 법 특강! 누구나 악마가 되어 세상을 조질 수 있다!!
+              여러분도 도전해보세요. 종암경찰서 112타격대, 최고의 데빌 세뇨르
+              팍의 가짜 악마 ep1 지금 시작합니다! (부제 : 교관 문상민의 호통 -
+              개때끼들아!!!! ㅎㅎㅎㅎㅎㅎ)
+            </p>
 
-    <!-- video description -->
-    <main>
-      <div class="main__tags">
-        <a href="#">#DreamCoding</a>
-        <a href="#">#DreamCoders</a>
-        <a href="#">#Ellie</a>
-      </div>
-
-      <div class="main__title">
-        <p>
-          Clone Coding: Youtube Mobile Website 클론코딩 유튜브 사이트 따라
-          만들기(HTML+CSS 연습편, 웹 포트폴리오) | 프론트엔드 개발자 입문편:
-          HTML, CSS, Javascript 드림코딩과 함께하는 프론트엔드 개발자 되기
-          로드맵!
-        </p>
-
-        <a href="#"><i class="fas fa-sort-down"></i></a>
-      </div>
-
-      <div class="main__date">
-        <p>1M views 1 month ago</p>
-      </div>
-
-      <ul class="main__btns">
-        <li>
-          <a href="#"><i class="fas fa-thumbs-up"></i></a>
-          <span>1K</span>
-        </li>
-        <li>
-          <a href="#"><i class="fas fa-thumbs-down"></i></a>
-          <span>0</span>
-        </li>
-        <li>
-          <a href="#"><i class="fas fa-share"></i></a>
-          <span>Share</span>
-        </li>
-        <li>
-          <a href="#"><i class="fas fa-plus"></i></a>
-          <span>Save</span>
-        </li>
-        <li>
-          <a href="#"><i class="fas fa-flag"></i></a>
-          <span>Report</span>
-        </li>
-      </ul>
-
-      <div class="main__uploader-info">
-        <img src="images/saeho.jpg" width="50px" height="50px" />
-
-        <div class="main__uploder-info__channel">
-          <h2>세뇨르 팍</h2>
-          <p>1M subscribers</p>
+            <button class="handleOverflowBtn">
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </div>
+          <div class="dateOfVideo">1M views 1 month ago</div>
         </div>
 
-        <a href="#">SUBSCRIBE</a>
-      </div>
+        <ul class="interactionBtns">
+          <li><i class="fas fa-thumbs-up" id="active"></i><span>12</span></li>
+          <li><i class="fas fa-thumbs-down"></i><span>2</span></li>
+          <li><i class="fas fa-share"></i><span>Share</span></li>
+          <li><i class="fas fa-plus"></i><span>Save</span></li>
+          <li><i class="fas fa-flag"></i><span>Report</span></li>
+        </ul>
 
-      <div class="main__upNext">Up next</div>
-      <div class="main__related-videos"></div>
-    </main>
+        <div class="channelInfo">
+          <div class="youtuberInfo">
+            <img src="images/saeho.jpg" alt="" width="50px" height="50px" />
+            <div class="youtuberData">
+              <span class="name">세뇨르 팍</span>
+              <span class="subscribers">12 subscribers</span>
+            </div>
+          </div>
+          <span id="btnSubscribe">subscribe</span>
+        </div>
+      </section>
+
+      <!-- Up next -->
+      <section class="upNext_container">
+        <span class="head">Up next</span>
+
+        <ul class="video_container">
+          <li class="related_video">
+            <img src="images/saeho.jpg" alt="" width="150px" />
+            <div class="info">
+              <span class="title"
+                >악마되는 법 특강! 누구나 악마가 되어 세상을 조질 수 있다!!
+                여러분도 도전해보세요. 세뇨르 팍의 가짜 악마 지금
+                시작합니다!</span
+              >
+              <span class="name">데빌 세뇨르 팍</span>
+              <span class="views">320 views</span>
+            </div>
+            <button><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+
+          <li class="related_video">
+            <img src="images/saeho.jpg" alt="" width="150px" />
+            <div class="info">
+              <span class="title"
+                >악마되는 법 특강! 누구나 악마가 되어 세상을 조질 수 있다!!
+                여러분도 도전해보세요. 세뇨르 팍의 가짜 악마 지금
+                시작합니다!</span
+              >
+              <span class="name">데빌 세뇨르 팍</span>
+              <span class="views">320 views</span>
+            </div>
+            <button><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+
+          <li class="related_video">
+            <img src="images/saeho.jpg" alt="" width="150px" />
+            <div class="info">
+              <span class="title"
+                >악마되는 법 특강! 누구나 악마가 되어 세상을 조질 수 있다!!
+                여러분도 도전해보세요. 세뇨르 팍의 가짜 악마 지금
+                시작합니다!</span
+              >
+              <span class="name">데빌 세뇨르 팍</span>
+              <span class="views">320 views</span>
+            </div>
+            <button><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+        </ul>
+      </section>
+    </div>
   </body>
 </html>
